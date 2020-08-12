@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ekjot Singh Portfolio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Local JS -->
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <nav class="navbar-dark navbar-expand-sm bg-dark sticky-top">
+        <div class="navbar-collapse collapse justify-content-center order-2">
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:ekjotsingh.1999@gmail.com">Contact</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Actual content starts here-->
+    <!-- Project Section -->
+    <section class="about-section" style="margin-bottom:0;">
+        <div class="card" style="background-color: rgba(256, 256, 256, 0.4);">
+            <div class="card-header text-center"><h1>Optical Character Reader</h1></div>
+            <div class="card-body" style="background-color: rgba(256, 256, 256, 0.2);">
+                <div class="row">         
+                    <div class="col-8">
+                        <p>At the start of my time at Niagara College (January 2018) I began working on this personal project. I have always had an interest in the technology of Optical Character Recognition (OCR). Early implementations of Google Lens always fascinated me, or scanning a cheque with my phone and it perfectly reading the information on it.
+                            From this interest, I decided to start working on my own desktop application that will take advantage of OCR. In my own time, I spend quite a bit of time playing video games. Often, games will come out in other regions of the world that interest me, and usually I would have to wait awhile for them to come to North America, or I can bare through trying to read a different language.
+                            To remedy this problem, the application that I wanted to create was one that allowed you to screengrab a region of your screen on your desktop, and pull all text from it that isn't english. From here, you can pick your desired language to translate to and it will run it through Google Translate.
+                            Due to the nature of a computer screen, drawn graphics like images, videos, or a game screen can't be simply copy/pasted. This tech makes it significantly easier to translate things that don't use roman characters like English.
+                        </p>
+                        <p>This project was built using a <b>Java client</b> that allows users to drag a box around what region of the screen they'd like to capture, and it uses a <b>Python 3 REST API</b> for running translated text through <b>Tesseract-OCR</b> (An open-source OCR library). The REST API was created using <b>Flask</b> as a framework. In the GitHub repository, I have the open-source version of the client, and the original local Java server I designed before moving onto a Python API for performance issues. Local allows you to contain all of your images privately, while the client can be run alone to connect to my publicly hosted API.</p>
+                        <p>See the entire project at my <a href="https://github.com/cerinius/ocrapp">GitHub Repository</a> and read through the more detailed walkthrough/documentation.</p>
+                        <div>
+                            <h3>Repository & Technologies</h3>
+                            <a href="https://github.com/cerinius/ocrapp"><img src="img/github-logo.png" style="height:68px;width:68px;"></a>
+                            <img src="img/java-logo.png" style="height:68px;width:68px;">
+                            <img src="img/python-color.png" style="height:68px;width:68px;">
+                        </div>
+                        
+                    </div>
+                    <div class="col-4">
+                        <br/>
+                        <a href="https://github.com/cerinius/ocrapp"><img src="img/ocr-image.png" class="my-image"></a>
+                    </div>           
+                </div>
+            </div> 
+        </div>          
+    </section>
+    <div style="position:absolute;bottom:0; width:100%;">
+            <footer class="page-footer" style="background-color: rgba(256, 256, 256, 0.4); bottom:0; width:100%; position: absolute;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12" style="padding-top:10px">
+                                <h5 style="display:inline;">Created and owned by Ekjot Singh - <a href="mailto:ekjotsingh.1999@gmail.com">EkjotSingh.1999@gmail.com</a></h5>
+                                <p style="float:right;">Want to see the source code of the website? <a href="https://github.com/cerinius/portfolio-website">GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </div>
+</body>
+
+
+</html>
